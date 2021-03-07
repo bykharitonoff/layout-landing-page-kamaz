@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Посадочная странинца zapmig</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <main class="page-kamaz page-kamaz__sale-and-overhaul-cabins">
+        <div class="page__wrapper">
+            <div class="head-area">
+                <div class="head-area__title-block">
+                    <div class="head-area__title-block__logo page-logo">
+                        <a href=""><img src="images/logo_154_67.png"></a>
+                        <span class="head-area__title-block__logo-description">
+                            Продажа запасных частей <br>с доставкой по России
+                        </span>
+                    </div>
+                    <div class="head-area__title-page">
+                        <h1>Продажа и <br>капитальный<br> ремонт кабин камаза</h1>
+                    </div>
+                    <div class="head-area__title-block__description">
+                        <p>Оставьте заявку и сэкономьте на ремонте кабины Камаз <br>в кризис до 45 000 рублей</p>
+                    </div>
+                </div>
+                <div class="head-area__inform-block">
+                    <div class="inform-block__social-contacts">
+                        <a href="mailto:pr@zapmig.ru">pr@zapmig.ru</a>
+                        <a href="/">WhatsApp</a>
+                        <a href="/">Viber</a>
+                        <a href="/">Telegram</a>
+                        <a href="tel:88002001753" class="number-phone">8 (800) 200-17-53</a>
+                    </div>
+                    <div class="inform-block__form-block">
+                        <div class="inform-block__form-title">Оставьте заявку</div>
+                        <div class="inform-block__form-description">Наш менеджер свяжется с вами в ближайшее время</div>
+                        <form class="inform-block__contact-form contact-form" action="">
+                            <div class="contact-form__name-and-tel">
+                                <div class="contact-form__block">
+                                    <div class="contact-form__name input-title">Введите ваше имя</div>
+                                    <input type="text" class="contact-form__input input-name" placeholder="Иванов Иван">
+                                </div>
+                                <div class="contact-form__block">
+                                    <div class="contact-form__tel input-title">Введите ваш телефон</div>
+                                    <input type="text" id="js-head-phone" class="contact-form__input input-phone" placeholder="+7 (999) 999-99-99">
+                                </div>
+                            </div>
+                            <div class="contact-form__way-communication">
+                                <div class="way-communication__title input-title">Предпочитаемый способ связи</div>
+                                <div class="way-communication__block">
+
+                                    <label>
+                                        <input class="wc-inp-phone" type="radio" name="wc-inp" value="phone">
+                                        <div class="way-communication__img wc-phone"></div>
+                                    </label>
+                                    <label>
+                                        <input class="wc-inp-whatsapp" type="radio" name="wc-inp" value="whatsapp" checked>
+                                        <div class="way-communication__img wc-whatsapp"></div>
+                                    </label>
+                                    <label>
+                                        <input class="wc-inp-telegram" type="radio" name="wc-inp" value="telegram">
+                                        <div class="way-communication__img wc-telegram"></div>
+                                    </label>
+                                    <label>
+                                        <input class="wc-inp-viber" type="radio" name="wc-inp" value="viber">
+                                        <div class="way-communication__img wc-viber"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contact-form__button">
+                                <button id="send-form-kamaz" class="btn contact-form__btn-send-kamaz">Получить скидку 18%</button>
+                            </div>
+                            <p class="contact-form__agreement-policy">
+                                Нажимая на кнопку, вы даете согласие на обработку своих<br>
+                                персональных данных и соглашаетесь с <a href="/">Пользовательским соглашением</a>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="inform-block__advantages">
+                        <div class="advantages__delivery advantages-block">
+                            <img src="images/11.svg" alt="">
+                            <span>
+                                Доставка в любой город<br>
+                                России через нашего<br>
+                                диспетчера за 2-7 дней
+                            </span>
+                        </div>
+                        <div class="advantages__price advantages-block">
+                            <img src="images/12.svg" alt="">
+                            <span>
+                                Самые низкие цены на рынке.<br>
+                                Дешевле вы не найдете.
+                            </span>
+                        </div>
+                        <div class="advantages__guarantee advantages-block">
+                            <img src="images/13.svg" alt="">
+                            <span>
+                                Официальная гарантия<br>
+                                выполнения сроков.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-description">
+                <div class="catalog-description__block">
+                    <div class="icon-setting">
+                        <img src="images/settings.svg" alt="">
+                    </div>
+                    <div class="catalog-description__title">
+                        Каталог кабин КамАз после капитального ремонта
+                    </div>
+                    <div class="catalog-description__descr">
+                        Ремонт кабин любой сложности после аварии и ДТП, замена обшивки,<br>
+                        шумоизоляции КамАЗ, утепление кабины КамАЗ, покраска кабина КамАЗ,<br>
+                        ремонт агрегатов, замена кабины КамАЗ.
+                    </div>
+                </div>
+            </div>
+            <div class="parts-catalog">
+                <div class="parts-catalog-block">
+                    <div class="title-block">Каталог запчастей</div>
+                </div>
+            </div>
+            <div class="delivery-and-payment">
+                <div class="delivery-block">
+                    <div class="title-block">Доставка</div>
+                    <div class="del-and-pay__block">
+                        <div class="del-and-pay__item">
+                            <div class="del-and-pay__item-area">
+                                <div class="del-and-pay__item__img-and-title">
+                                    <div class="del-and-pay__left-block">
+                                        <img src="images/1.svg" alt="">
+                                    </div>
+                                    <div class="del-and-pay__right-block">
+                                        <div class="del-and-pay__title">
+                                            Доставка транспортной<br> компанией
+                                        </div>
+                                        <div class="del-and-pay__description">
+                                            <div class="del-and-pay__date">
+                                                <span>2-4</span> дня, <span>4500</span> рублей
+                                            </div>
+                                            <a href="/" class="del-and-pay__more">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="js-calculate-price-delivery">
+                                    Рассчитать стоимость доставки
+                                </button>
+                            </div>
+                        </div>
+                        <div class="del-and-pay__item">
+                            <div class="del-and-pay__item-area">
+                                <div class="del-and-pay__item__img-and-title">
+                                    <div class="del-and-pay__left-block">
+                                        <img src="images/2.svg" alt="">
+                                    </div>
+                                    <div class="del-and-pay__right-block">
+                                        <div class="del-and-pay__title">
+                                            Самовывоз
+                                        </div>
+                                        <div class="del-and-pay__description">
+                                            <div class="del-and-pay__adres">
+                                                РФ, Республика Татарстан,<br>
+                                                г. Набережные Челны, Казанский<br>
+                                                проспект 198
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="js-view-to-map">Посмотреть на карте</button>
+                            </div>
+                        </div>
+                        <div class="del-and-pay__item">
+                            <div class="del-and-pay__item-area">
+                                <div class="del-and-pay__item__img-and-title">
+                                    <div class="del-and-pay__left-block">
+                                        <img src="images/3.svg" alt="">
+                                    </div>
+                                    <div class="del-and-pay__right-block">
+                                        <div class="del-and-pay__title">
+                                            Особые условия доставки
+                                            оптовым клиентам
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-block">
+                    <div class="title-block">Оплата</div>
+                    <div class="delivery-and-payment__block">
+                        <div class="del-and-pay__block">
+                            <div class="del-and-pay__item">
+                                <div class="del-and-pay__item-area">
+                                    <div class="del-and-pay__item__img-and-title">
+                                        <div class="del-and-pay__left-block">
+                                            <img src="images/4.svg" alt="">
+                                        </div>
+                                        <div class="del-and-pay__right-block">
+                                            <div class="del-and-pay__title">
+                                                Наличный расчет
+                                            </div>
+                                            <div class="del-and-pay__description">
+                                                <div class="del-and-pay__adres">
+                                                    Оплатить заказ Вы можете у нас в офисе, по адресу: РФ, Республика Татарстан, г. Набережные челны, Казанский проспект 198.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="del-and-pay__item">
+                                <div class="del-and-pay__item-area">
+                                    <div class="del-and-pay__item__img-and-title">
+                                        <div class="del-and-pay__left-block">
+                                            <img src="images/5.svg" alt="">
+                                        </div>
+                                        <div class="del-and-pay__right-block">
+                                            <div class="del-and-pay__title">
+                                                Безналичный расчет
+                                            </div>
+                                            <div class="del-and-pay__description">
+                                                <div class="del-and-pay__date">
+                                                    Отправьте вашу карту партнера на
+                                                    почту pr@zapmig.ru и вашу заявку.
+                                                    Счет  (без учета стоимости доставки
+                                                    товара) будет сброшен по факсу или
+                                                    на электронную почту.
+                                                </div>
+                                                <a href="/" class="del-and-pay__more">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="del-and-pay__item">
+                                <div class="del-and-pay__item-area">
+                                    <div class="del-and-pay__item__img-and-title">
+                                        <div class="del-and-pay__left-block">
+                                            <img src="images/6.svg" alt="">
+                                        </div>
+                                        <div class="del-and-pay__right-block">
+                                            <div class="del-and-pay__title">
+                                                Карта банка
+                                            </div>
+                                            <div class="del-and-pay__description">
+                                                <div class="del-and-pay__adres">
+                                                    Сбербанк<br>
+                                                    5469 6200 2124 2183<br>
+                                                    Нургалиев Радэль Ильдарович
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="del-and-pay__item">
+                                <div class="del-and-pay__item-area">
+                                    <div class="del-and-pay__item__img-and-title">
+                                        <div class="del-and-pay__left-block">
+                                            <img src="images/7.svg" alt="">
+                                        </div>
+                                        <div class="del-and-pay__right-block">
+                                            <div class="del-and-pay__title">
+                                                Оплата при получение
+                                            </div>
+                                            <div class="del-and-pay__description">
+                                                <div class="del-and-pay__adres">
+                                                    Наложенный платеж<br>
+                                                    При заказе от 15 000 руб
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parts-catalog">
+                <div class="parts-catalog-block">
+                    <div class="title-block">Почему выбирают нашу компанию?</div>
+                    <div class="advantages">
+                        <div class="advantages-area">
+                            <div class="advantages-area__two">
+                                Почему<br>
+                                выбирают нашу<br>
+                                компанию?
+                            </div>
+                            <div class="advantages-area__circle-block block1">
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Работаем с НДС</div>
+                                    <div class="circle-block__text__descr">
+                                        Любая форма оплаты, наличный,<br>
+                                        безналичный расчет с НДС.
+                                    </div>
+                                </div>
+                                <div class="circle-block__number">1</div>
+                            </div>
+                            <div class="advantages-area__circle-block block2">
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Антикоррозионная обработка</div>
+                                    <div class="circle-block__text__descr">
+                                        Пол кабины Камаз обрабатывается<br>
+                                        с 2-х сторон.
+                                    </div>
+                                </div>
+                                <div class="circle-block__number">2</div>
+                            </div>
+                            <div class="advantages-area__circle-block block3">
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Скорость производства</div>
+                                    <div class="circle-block__text__descr">
+                                        Срок изготовления 16-18 рабочих дней.<br>
+                                        Срок прописывается в договоре.
+                                    </div>
+                                </div>
+                                <div class="circle-block__number">3</div>
+                            </div>
+                            <div class="advantages-area__circle-block block4">
+                                <div class="circle-block__number">4</div>
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Доставка в любой город России</div>
+                                    <div class="circle-block__text__descr">
+                                        попутным транспортом, через нашего диспетчера<br>
+                                        за 2-7 дней. (Цена в 2 раза дешевле, чем через<br>
+                                        транспортную компанию)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages-area__circle-block block5">
+                                <div class="circle-block__number">5</div>
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Гарантия лучшей цены</div>
+                                    <div class="circle-block__text__descr">
+                                        Самые низкие цены на рынке. Дешевле<br>
+                                        вы не найдете. Оптимальное<br>
+                                        соотношение цена-качество.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="advantages-area__circle-block block6">
+                                <div class="circle-block__number">6</div>
+                                <div class="circle-block__text">
+                                    <div class="circle-block__text__title">Покраска в любые цвета</div>
+                                    <div class="circle-block__text__descr">
+                                        Покраска кабин в цвета металик<br>
+                                        и перламутр.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prefooter">
+                <div class="prefooter-block">
+                    <div class="prefooter-block-area">
+                        <div class="prefooter-block__image">
+                            <img src="images/kamaz-prefooter.png" alt="">
+                        </div>
+                        <div class="prefooter-block__right-block">
+                            <div class="prefooter-block__title">
+                                Оставьте заявку и сэкономьте на ремонте кабины<br>
+                                Камаз в кризис до 45 000 рублей
+                            </div>
+                            <form action="">
+                                <div class="contact-form__name-and-tel prefooter-form__name-and-tel">
+                                    <div class="prefooter-form__block">
+                                        <div class="contact-form__name input-title">Введите ваше имя</div>
+                                        <input type="text" class="contact-form__input prefooter-input input-name" placeholder="Иванов Иван">
+                                    </div>
+                                    <div class="prefooter-form__block">
+                                        <div class="contact-form__tel input-title">Введите ваш телефон</div>
+                                        <input type="text" id="js-prefooter-phone" class="contact-form__input prefooter-input input-phone" placeholder="+7 (999) 999-99-99">
+                                    </div>
+                                    <button id="send-form-prefooter" class="prefooter-form__block btn prefooter-form__btn-send">
+                                        Отправить
+                                    </button>
+                                </div>
+                                <p class="contact-form__agreement-policy">
+                                    Нажимая на кнопку, вы даете согласие на обработку своих
+                                    персональных данных и соглашаетесь с<br>
+                                    <a href="/">Пользовательским соглашением</a>
+                                </p>
+                            </form>
+                            <div class="prefooter-block__social">
+                                <div class="prefooter-block__social-title">Как с нами связаться?</div>
+                                <div class="prefooter-block__social-icon">
+                                    <a href="/" class="social-phone">
+                                        <img src="images/phone.png" alt="">
+                                        <span>Телефон</span>
+                                    </a>
+                                    <a href="/" class="social-telegram">
+                                        <img src="images/telegram.png" alt="">
+                                        <span>Telegram</span>
+                                    </a>
+                                    <a href="/" class="social-whatsapp">
+                                        <img src="images/whatsapp.png" alt="">
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <a href="/" class="social-viber">
+                                        <img src="images/viber.png" alt="">
+                                        <span>Viber</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
