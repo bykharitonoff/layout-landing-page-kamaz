@@ -613,5 +613,16 @@ input::placeholder {
 
 #view-to-map.fancybox-content {
     width: inherit;
-    padding: 44px 0;
+    padding: 44px 10px;
+    background: transparent;
+}
+#view-to-map.fancybox-content .fancybox-close-small {
+    right: -5px;
+}
+#view-to-map.fancybox-content .fancybox-button svg path {
+    fill: #ffffff;
+}
+
+.fixed-social-block {
+    display: none;
 }
