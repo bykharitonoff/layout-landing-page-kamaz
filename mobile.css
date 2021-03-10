@@ -1,0 +1,314 @@
+@media only screen and (max-width: 1400px) {
+    .head-area {
+        height: inherit;
+    }
+    .del-and-pay__block {
+        margin: 0 -10px;
+    }
+    .del-and-pay__item {
+        width: calc(25% - 20px);
+        margin: 0 10px;
+    }
+    .del-and-pay__left-block {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .del-and-pay__block {
+        flex-wrap: wrap;
+    }
+    .del-and-pay__item {
+        width: calc(33.33% - 20px);
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .input-title {
+        font-size: 12px;
+    }
+    .prefooter-form__btn-send {
+        margin-top: 21px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .head-area {
+        flex-direction: column;
+    }
+    .head-area__title-block, .head-area__inform-block {
+        width: 100%;
+    }
+    .head-area__title-block {
+        padding: 20px;
+        width: calc(100% - 40px);
+        background: #7799c3;
+    }
+    .head-area__title-block__logo {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .head-area__title-page h1 {
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+    .head-area__title-page {
+        margin-bottom: 20px;
+    }
+    .head-area__title-block__description {
+        width: 100%;
+        text-align: center;
+    }
+    .inform-block__social-contacts {
+        justify-content: center;
+    }
+    .inform-block__form-block {
+        width: 100%;
+    }
+    .inform-block__form-title {
+        text-align: left;
+    }
+    .inform-block__form-description {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .contact-form__name-and-tel {
+        margin-bottom: 20px;
+    }
+    .way-communication__block {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .catalog-description__block div {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page__wrapper {
+        padding: 0;
+    }
+    .mobile-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: calc(100% - 30px);
+    }
+    .inform-block__form-block {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+    .catalog-description__descr {
+        width: 100%;
+    }
+    .catalog-description {
+        padding: 20px 0;
+    }
+    .del-and-pay__item {
+        width: calc(50% - 20px);
+    }
+    .del-and-pay__block {
+        width: calc(100% + 20px);
+    }
+    .delivery-and-payment {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .title-block {
+        margin-bottom: 20px;
+    }
+    .delivery-block {
+        margin-bottom: 0;
+    }
+    .parts-catalog {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .parts-catalog-block > .title-block {
+        display: block;
+    }
+    .advantages {
+        padding: 0;
+    }
+    .advantages-area {
+        border: none;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .advantages-area__two {
+        display: none;
+    }
+    .block1, .block2, .block3, .block4, .block5, .block6 {
+        top: inherit;
+        left: inherit;
+        bottom: inherit;
+        width: 50%;
+        padding: 5px 0;
+    }
+    .block1, .block2, .block3 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .advantages-area__circle-block {
+        position: relative;
+    }
+    .prefooter {
+        height: auto;
+    }
+    .prefooter-block__image {
+        display: none;
+    }
+    .prefooter-block-area {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .prefooter-block__right-block {
+        width: 100%;
+    }
+    .prefooter-block__title {
+        margin-bottom: 25px;
+    }
+    .prefooter .contact-form__agreement-policy {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .circle-block__number {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        min-height: 55px;
+        font-size: 24px;
+    }
+    .circle-block__text__title {
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    .circle-block__text__descr {
+        width: auto;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .head-area__title-page h1 {
+        font-size: 24px;
+    }
+    .inform-block__social-contacts {
+        flex-wrap: wrap;
+    }
+    .inform-block__advantages {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .inform-block__advantages-area {
+        margin: auto;
+        display: initial;
+        width: initial;
+        justify-content: initial;
+    }
+    .advantages-block {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .advantages-block img {
+        display: inherit;
+        margin: inherit;
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    .del-and-pay__item__img-and-title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .del-and-pay__left-block {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .del-and-pay__title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .del-and-pay__item-area {
+        padding: 15px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 30px);
+    }
+    .del-and-pay__item-area .btn {
+        font-size: 12px;
+        padding: 15px 5px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .del-and-pay__item-area {
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 484px) {
+    .del-and-pay__item {
+        width: calc(100% - 20px);
+    }
+    .contact-form__name-and-tel {
+        flex-direction: column;
+    }
+    .contact-form__block {
+        width: 100%;
+    }
+    .contact-form__input {
+        width: calc(100% - 20px);
+    }
+    .contact-form__name-and-tel {
+        margin-bottom: 0px;
+    }
+    .contact-form__block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .advantages-area__circle-block {
+        width: 100%;
+    }
+    .prefooter-form__block {
+        width: 100%;
+    }
+    .prefooter-form__btn-send {
+        margin-bottom: 21px;
+    }
+    .prefooter-block__social-icon {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .head-area__title-block__logo {
+        flex-direction: column;
+    }
+    .head-area__title-block__logo-description {
+        margin-left: 0;
+        text-align: center;
+    }
+    .input-title {
+        font-size: 12px;
+    }
+    .social-icon__img {
+        padding: 6px;
+        width: 58px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        min-width: 320px;
+    }
+}

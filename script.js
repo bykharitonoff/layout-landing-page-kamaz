@@ -24,3 +24,68 @@ $(function () {
             $input.attr("placeholder", placeholder);
         });
 });
+
+// Fancybox
+$(function () {
+    // Ссылка "подробнее" в блоке "Доставка транспортной компанией"
+    $(".js-delivery").fancybox({
+        "padding" : 20,
+        "frameWidth" : 700,
+        "frameHeight" : 600,
+        "overlayOpacity" : 0.8,
+    });
+    // Всплывающая карта
+    $(".js-view-to-map").fancybox({
+        "padding" : 10,
+        "frameWidth" : 1280,
+        "frameHeight" : 600,
+        "overlayOpacity" : 0.8,
+        "touch" : false
+    });
+    $(".js-del-price").fancybox({
+        "padding" : 20,
+        "frameWidth" : 800,
+        "frameHeight" : 600,
+        "overlayOpacity" : 0.8,
+    });
+});
+
+// При скролле #js-scroll-title фиксированый
+$(function () {
+    var $navBar = $('#js-scroll-title');
+    var navPos = $navBar.offset().top;
+    var navbar_height = $navBar.outerHeight();
+    var navbar_pb = parseInt($navBar.parent().css("padding-bottom"));
+    $(window).scroll(function() {
+        var scrollPos = $(this).scrollTop();
+        if (scrollPos >= navPos) {
+            $navBar.parent().css('padding-bottom',navbar_height);
+            $navBar.addClass('fixed-scroll-title');
+        } else {
+            $navBar.parent().css('padding-bottom', navbar_pb );
+            $navBar.removeClass('fixed-scroll-title');
+        }
+    });
+});
+
+// Валидация форм
+$(function () {
+    var input_name = $('.input-name');
+    var input_phone = $('.input-phone');
+
+    input_name.blur(function () {
+        if ($(this).val() < 2 ) {
+            $(this).next().show();
+        } else {
+            $(this).next().hide();
+        }
+    });
+    input_phone.blur(function () {
+        if ($(this).val().length < 18) {
+            $(this).next().show();
+        } else {
+            $(this).next().hide();
+        }
+    });
+});
+

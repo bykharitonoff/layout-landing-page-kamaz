@@ -6,15 +6,19 @@
     <title>Посадочная странинца zapmig</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="plugin/jquery.fancybox.min.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.mask.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="plugin/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
     <main class="page-kamaz page-kamaz__sale-and-overhaul-cabins">
         <div class="page__wrapper">
             <div class="head-area">
-                <div class="head-area__title-block">
+                <div class="head-area__title-block mobile-wrapper">
                     <div class="head-area__title-block__logo page-logo">
                         <a href=""><img src="images/logo_154_67.png"></a>
                         <span class="head-area__title-block__logo-description">
@@ -22,40 +26,41 @@
                         </span>
                     </div>
                     <div class="head-area__title-page">
-                        <h1>Продажа и <br>капитальный<br> ремонт кабин камаза</h1>
+                        <h1>Продажа и капитальный ремонт кабин камаза</h1>
                     </div>
                     <div class="head-area__title-block__description">
-                        <p>Оставьте заявку и сэкономьте на ремонте кабины Камаз <br>в кризис до 45 000 рублей</p>
+                        <p>Оставьте заявку и сэкономьте на ремонте кабины Камаз в кризис до 45 000 рублей</p>
                     </div>
                 </div>
                 <div class="head-area__inform-block">
-                    <div class="inform-block__social-contacts">
+                    <div class="inform-block__social-contacts mobile-wrapper">
                         <a href="mailto:pr@zapmig.ru">pr@zapmig.ru</a>
                         <a href="/">WhatsApp</a>
                         <a href="/">Viber</a>
                         <a href="/">Telegram</a>
                         <a href="tel:88002001753" class="number-phone">8 (800) 200-17-53</a>
                     </div>
-                    <div class="inform-block__form-block">
+                    <div class="inform-block__form-block mobile-wrapper">
                         <div class="inform-block__form-title">Оставьте заявку</div>
                         <div class="inform-block__form-description">Наш менеджер свяжется с вами в ближайшее время</div>
-                        <form class="inform-block__contact-form contact-form" action="">
+                        <form class="inform-block__contact-form contact-form" action="send.php" method="post">
                             <div class="contact-form__name-and-tel">
                                 <div class="contact-form__block">
                                     <div class="contact-form__name input-title">Введите ваше имя</div>
-                                    <input type="text" class="contact-form__input input-name" placeholder="Иванов Иван">
+                                    <input type="text" class="contact-form__input input-name" placeholder="Иванов Иван" required>
+                                    <div class="validate-error">*Поле обязательно для заполнения</div>
                                 </div>
                                 <div class="contact-form__block">
                                     <div class="contact-form__tel input-title">Введите ваш телефон</div>
-                                    <input type="text" id="js-head-phone" class="contact-form__input input-phone" placeholder="+7 (999) 999-99-99">
+                                    <input type="tel" id="js-head-phone" class="contact-form__input input-phone" placeholder="+7 (999) 999-99-99" required>
+                                    <div class="validate-error">*Поле обязательно для заполнения</div>
                                 </div>
                             </div>
                             <div class="contact-form__way-communication">
                                 <div class="way-communication__title input-title">Предпочитаемый способ связи</div>
                                 <div class="way-communication__block">
-
                                     <label>
-                                        <input class="wc-inp-phone" type="radio" name="wc-inp" value="phone">
+                                        <input id="" class="wc-inp-phone" type="radio" name="wc-inp" value="phone">
                                         <div class="way-communication__img wc-phone"></div>
                                     </label>
                                     <label>
@@ -73,7 +78,7 @@
                                 </div>
                             </div>
                             <div class="contact-form__button">
-                                <button id="send-form-kamaz" class="btn contact-form__btn-send-kamaz">Получить скидку 18%</button>
+                                <input type="button" id="send-form-kamaz" class="btn contact-form__btn-send-kamaz" value="Получить скидку 18%">
                             </div>
                             <p class="contact-form__agreement-policy">
                                 Нажимая на кнопку, вы даете согласие на обработку своих<br>
@@ -81,43 +86,45 @@
                             </p>
                         </form>
                     </div>
-                    <div class="inform-block__advantages">
-                        <div class="advantages__delivery advantages-block">
-                            <img src="images/11.svg" alt="">
-                            <span>
-                                Доставка в любой город<br>
-                                России через нашего<br>
-                                диспетчера за 2-7 дней
-                            </span>
-                        </div>
-                        <div class="advantages__price advantages-block">
-                            <img src="images/12.svg" alt="">
-                            <span>
-                                Самые низкие цены на рынке.<br>
-                                Дешевле вы не найдете.
-                            </span>
-                        </div>
-                        <div class="advantages__guarantee advantages-block">
-                            <img src="images/13.svg" alt="">
-                            <span>
-                                Официальная гарантия<br>
-                                выполнения сроков.
-                            </span>
+                    <div class="inform-block__advantages mobile-wrapper">
+                        <div class="inform-block__advantages-area">
+                            <div class="advantages__delivery advantages-block">
+                                <img src="images/11.svg" alt="">
+                                <span>
+                                    Доставка в любой город<br>
+                                    России через нашего<br>
+                                    диспетчера за 2-7 дней
+                                </span>
+                            </div>
+                            <div class="advantages__price advantages-block">
+                                <img src="images/12.svg" alt="">
+                                <span>
+                                    Самые низкие цены на рынке.<br>
+                                    Дешевле вы не найдете.
+                                </span>
+                            </div>
+                            <div class="advantages__guarantee advantages-block">
+                                <img src="images/13.svg" alt="">
+                                <span>
+                                    Официальная гарантия<br>
+                                    выполнения сроков.
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="catalog-description">
-                <div class="catalog-description__block">
+                <div class="catalog-description__block mobile-wrapper">
                     <div class="icon-setting">
                         <img src="images/settings.svg" alt="">
                     </div>
-                    <div class="catalog-description__title">
+                    <div id="js-scroll-title" class="catalog-description__title">
                         Каталог кабин КамАз после капитального ремонта
                     </div>
                     <div class="catalog-description__descr">
-                        Ремонт кабин любой сложности после аварии и ДТП, замена обшивки,<br>
-                        шумоизоляции КамАЗ, утепление кабины КамАЗ, покраска кабина КамАЗ,<br>
+                        Ремонт кабин любой сложности после аварии и ДТП, замена обшивки,
+                        шумоизоляции КамАЗ, утепление кабины КамАЗ, покраска кабина КамАЗ,
                         ремонт агрегатов, замена кабины КамАЗ.
                     </div>
                 </div>
@@ -127,7 +134,7 @@
                     <div class="title-block">Каталог запчастей</div>
                 </div>
             </div>
-            <div class="delivery-and-payment">
+            <div class="delivery-and-payment mobile-wrapper">
                 <div class="delivery-block">
                     <div class="title-block">Доставка</div>
                     <div class="del-and-pay__block">
@@ -145,13 +152,36 @@
                                             <div class="del-and-pay__date">
                                                 <span>2-4</span> дня, <span>4500</span> рублей
                                             </div>
-                                            <a href="/" class="del-and-pay__more">Подробнее</a>
+                                            <a href="#delivery-more" class="js-delivery">Подробнее</a>
+                                            <div style="display: none">
+                                                <div id="delivery-more">
+                                                    В среднем доставка занимает 2-4 дня и сумма за доставку не превышает 400 рублей.<br>
+                                                    Любой транспортной компанией на Ваше усмотрение + мы поможем подобрать оптимальный вариант по срокам и цене (так как в зависимости от города цены меняются)
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <button class="js-calculate-price-delivery">
+                                <a data-fancybox data-src="#modal_delivery" href="javascript:;" class="btn js-del-price">
                                     Рассчитать стоимость доставки
-                                </button>
+                                </a>
+<!--                                <?-->
+<!--                                    $leightProduct = ($arResult["PROPERTIES"]["LENGHT"]["VALUE"]) * 0.001;-->
+<!--                                    $widthProduct = ($arResult["PROPERTIES"]["WIDTH"]["VALUE"]) * 0.001;-->
+<!--                                    $heightProduct = ($arResult["PROPERTIES"]["HEIGHT"]["VALUE"]) * 0.001;-->
+<!--                                    $obemProduct = $leightProduct * $widthProduct * $heightProduct;-->
+<!--                                    $massaProduct = $arResult["PROPERTIES"]["MASS"]["VALUE"];-->
+<!--                                ?>-->
+                                <div style="display: none">
+                                    <div id="modal_delivery" class="modal_delivery" style="width: 650px;">
+                                        <iframe
+                                            id="frame"
+                                            src="https://alliance-catalog.ru/delcalcframe/?city=Москва&weight=<?echo $massaProduct?>&volume=<?echo $obemProduct?>"
+                                            frameborder="0"
+                                            style="width: 600px; height: 700px; display: block;"
+                                        ></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="del-and-pay__item">
@@ -173,7 +203,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="js-view-to-map">Посмотреть на карте</button>
+                                <a href="#view-to-map" class="btn js-view-to-map">Посмотреть на карте</a>
+                                <div style="display: none">
+                                    <div id="view-to-map">
+                                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afb88c496934cd581705598920ee2d3ebfd4c204756f8a3a62ac1698b381f6f9d&amp;width=1280&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="del-and-pay__item">
@@ -287,7 +322,7 @@
                     </div>
                 </div>
             </div>
-            <div class="parts-catalog">
+            <div class="parts-catalog mobile-wrapper">
                 <div class="parts-catalog-block">
                     <div class="title-block">Почему выбирают нашу компанию?</div>
                     <div class="advantages">
@@ -365,7 +400,7 @@
             </div>
             <div class="prefooter">
                 <div class="prefooter-block">
-                    <div class="prefooter-block-area">
+                    <div class="prefooter-block-area mobile-wrapper">
                         <div class="prefooter-block__image">
                             <img src="images/kamaz-prefooter.png" alt="">
                         </div>
@@ -374,19 +409,19 @@
                                 Оставьте заявку и сэкономьте на ремонте кабины<br>
                                 Камаз в кризис до 45 000 рублей
                             </div>
-                            <form action="">
+                            <form id="contact-form" action="send.php" method="post">
                                 <div class="contact-form__name-and-tel prefooter-form__name-and-tel">
                                     <div class="prefooter-form__block">
                                         <div class="contact-form__name input-title">Введите ваше имя</div>
-                                        <input type="text" class="contact-form__input prefooter-input input-name" placeholder="Иванов Иван">
+                                        <input type="text" class="contact-form__input prefooter-input input-name" placeholder="Иванов Иван" required>
+                                        <div class="validate-error">*Поле обязательно для заполнения</div>
                                     </div>
                                     <div class="prefooter-form__block">
                                         <div class="contact-form__tel input-title">Введите ваш телефон</div>
-                                        <input type="text" id="js-prefooter-phone" class="contact-form__input prefooter-input input-phone" placeholder="+7 (999) 999-99-99">
+                                        <input type="text" id="js-prefooter-phone" class="contact-form__input prefooter-input input-phone" placeholder="+7 (999) 999-99-99" required>
+                                        <div class="validate-error">*Поле обязательно для заполнения</div>
                                     </div>
-                                    <button id="send-form-prefooter" class="prefooter-form__block btn prefooter-form__btn-send">
-                                        Отправить
-                                    </button>
+                                    <input type="submit" id="send-form-prefooter" class="prefooter-form__block btn prefooter-form__btn-send" value="Отправить">
                                 </div>
                                 <p class="contact-form__agreement-policy">
                                     Нажимая на кнопку, вы даете согласие на обработку своих
@@ -397,22 +432,34 @@
                             <div class="prefooter-block__social">
                                 <div class="prefooter-block__social-title">Как с нами связаться?</div>
                                 <div class="prefooter-block__social-icon">
-                                    <a href="/" class="social-phone">
-                                        <img src="images/phone.png" alt="">
-                                        <span>Телефон</span>
-                                    </a>
-                                    <a href="/" class="social-telegram">
-                                        <img src="images/telegram.png" alt="">
-                                        <span>Telegram</span>
-                                    </a>
-                                    <a href="/" class="social-whatsapp">
-                                        <img src="images/whatsapp.png" alt="">
-                                        <span>WhatsApp</span>
-                                    </a>
-                                    <a href="/" class="social-viber">
-                                        <img src="images/viber.png" alt="">
-                                        <span>Viber</span>
-                                    </a>
+                                    <label>
+                                        <input class="si-inp-phone" type="radio" name="si-inp" value="phone">
+                                        <div class="social-icon__img si-phone">
+                                            <img src="images/phone.png" alt="">
+                                            <span>Телефон</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input class="si-inp-telegram" type="radio" name="si-inp" value="telegram" checked>
+                                        <div class="social-icon__img si-telegram">
+                                            <img src="images/telegram.png" alt="">
+                                            <span>Telegram</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input class="wc-inp-whatsapp" type="radio" name="si-inp" value="whatsapp">
+                                        <div class="social-icon__img si-whatsapp">
+                                            <img src="images/whatsapp.png" alt="">
+                                            <span>WhatsApp</span>
+                                        </div>
+                                    </label>
+                                    <label>
+                                        <input class="si-inp-viber" type="radio" name="si-inp" value="viber">
+                                        <div class="social-icon__img si-viber">
+                                            <img src="images/viber.png" alt="">
+                                            <span>Viber</span>
+                                        </div>
+                                    </label>
                                 </div>
                             </div>
                         </div>
