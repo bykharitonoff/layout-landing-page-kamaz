@@ -1,3 +1,12 @@
+@media only screen and (max-width: 1650px) {
+    .page-kamaz-header {
+        background-size: 70%;
+    }
+    .inform-block__social-contacts {
+         padding-right: 32px;
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     .head-area {
         height: inherit;
@@ -32,6 +41,12 @@
 }
 
 @media only screen and (max-width: 1100px) {
+    .page-kamaz-header {
+        background-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     .head-area {
         flex-direction: column;
     }
@@ -45,7 +60,25 @@
     }
     .head-area__title-block__logo {
         margin-bottom: 20px;
-        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .head-area__title-block__logo a {
+        margin-bottom: 5px;
+    }
+    .head-area__title-block__logo-description {
+        margin-left: 0;
+        width: 100%;
+    }
+    .header__logo-and-tel .number-phone {
+        display: block;
+        font-weight: 700;
+        color: #fefefe;
+    }
+    .header__logo-and-tel {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     .head-area__title-page h1 {
         font-size: 32px;
@@ -82,9 +115,7 @@
     .catalog-description__block div {
         margin-bottom: 20px;
     }
-}
 
-@media only screen and (max-width: 1024px) {
     .page__wrapper {
         padding: 0;
     }
@@ -214,14 +245,15 @@
         margin: 10px 0;
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         text-align: left;
     }
     .advantages-block img {
         display: inherit;
-        margin: inherit;
+        margin-top: 0;
         margin-bottom: 0;
         margin-right: 15px;
+        margin-left: 0;
     }
     .del-and-pay__item__img-and-title {
         display: flex;
@@ -296,7 +328,7 @@
     }
     .head-area__title-block__logo-description {
         margin-left: 0;
-        text-align: center;
+        text-align: left;
     }
     .input-title {
         font-size: 12px;

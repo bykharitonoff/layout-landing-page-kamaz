@@ -36,9 +36,6 @@ $(function () {
     });
     // Всплывающая карта
     $(".js-view-to-map").fancybox({
-        "padding" : 10,
-        "frameWidth" : 1280,
-        "frameHeight" : 600,
         "overlayOpacity" : 0.8,
         "touch" : false
     });
