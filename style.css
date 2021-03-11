@@ -4,7 +4,7 @@
     font-family: 'Open Sans';
     font-size: 14px;
 }
-body {
+.page-kamaz.page-kamaz__sale-and-overhaul-cabins {
     overflow-x: hidden;
 }
 button, a {
@@ -129,9 +129,8 @@ input::-webkit-inner-spin-button {
 }
 .inform-block__advantages {
     background: #f3f3f3;
-    display: flex;
-    justify-content: space-between;
     padding: 25px 32px;
+    width: 100vw;
 }
 .inform-block__social-contacts a {
     margin-left: 25px;
@@ -220,7 +219,7 @@ input::placeholder {
 }
 .inform-block__advantages-area {
     display: flex;
-    width: 100%;
+    max-width: 760px;
     justify-content: space-between;
 }
 .advantages-block img {
@@ -249,6 +248,9 @@ input::placeholder {
     text-align: center;
     width: 50%;
     margin: auto;
+}
+.icon-setting {
+    max-height: 45px;
 }
 .catalog-description__block div {
     margin-bottom: 30px;
@@ -615,6 +617,7 @@ input::placeholder {
     width: inherit;
     padding: 44px 10px;
     background: transparent;
+    overflow-x: hidden;
 }
 #view-to-map.fancybox-content .fancybox-close-small {
     right: -5px;
